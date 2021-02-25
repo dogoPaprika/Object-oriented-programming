@@ -1,0 +1,1 @@
+ Address: address1 Construction Year: 2000, type: fancy, is historical: 1 Address: address2 Construction Year: 2001, total apartments: 50, total apartments: 45

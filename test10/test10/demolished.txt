@@ -1,0 +1,2 @@
+ Address: address3 Construction Year: 1900, type: modern, is historical: 0
+ Address: address4 Construction Year: 1970, total apartments: 50, occupied apartments: 1

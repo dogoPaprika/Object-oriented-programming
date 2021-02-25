@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DecideMode</class>
+ <widget class="QWidget" name="DecideMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>170</width>
+    <height>108</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>DecideMode</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Please, choose the mode:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="adminButton">
+     <property name="text">
+      <string>Administrator</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="userMode">
+     <property name="text">
+      <string>User</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>adminButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DecideMode</receiver>
+   <slot>goToAdmin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>249</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>userMode</sender>
+   <signal>clicked()</signal>
+   <receiver>DecideMode</receiver>
+   <slot>goToUser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>341</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>goToAdmin()</slot>
+  <slot>goToUser()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserMode</class>
+ <widget class="QWidget" name="UserMode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>407</width>
+    <height>301</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UserMode</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Watch List</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="watchList"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="saveButton">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="saveLineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="playButton">
+       <property name="text">
+        <string>Play</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Filter Results</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListWidget" name="filterList"/>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="formLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="genreLabel">
+         <property name="text">
+          <string>Genre:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="genreLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="likesLabel">
+         <property name="text">
+          <string>Likes:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="likesLineEdit"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="filterButton">
+         <property name="text">
+          <string>Filter</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="nextButton">
+       <property name="text">
+        <string>Next</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="initialButton">
+       <property name="text">
+        <string>All Movies</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>saveButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserMode</receiver>
+   <slot>saveMovie()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>62</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>5</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserMode</receiver>
+   <slot>playTrailer()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>283</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>initialButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserMode</receiver>
+   <slot>initiate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>274</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>397</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>filterButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserMode</receiver>
+   <slot>filterRepository()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>329</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>401</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nextButton</sender>
+   <signal>clicked()</signal>
+   <receiver>UserMode</receiver>
+   <slot>nextMovie()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>404</x>
+     <y>246</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>saveMovie()</slot>
+  <slot>playTrailer()</slot>
+  <slot>initiate()</slot>
+  <slot>filterRepository()</slot>
+  <slot>nextMovie()</slot>
+ </slots>
+</ui>

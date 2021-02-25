@@ -1,0 +1,5 @@
+reff,Andrei,email1,2008,Picachu,Arnold
+ghed,Marius,email2,2008,Doroti,Gabi
+fgf,Mihai,email43,2004
+ghgf,Renato,email54,2007,Kapucino
+ghg,Vlad,email45,2019,Teza,Gabi

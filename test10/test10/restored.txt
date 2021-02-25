@@ -1,0 +1,1 @@
+ Address: address3 Construction Year: 1900, type: modern, is historical: 0
